@@ -2,8 +2,9 @@
 
 
 # Alter
+[![](https://jitpack.io/v/yizeliang/StatusBarCompat.svg)](https://jitpack.io/#yizeliang/StatusBarCompat)
 
-- 2.0 加入android 6.0 状态栏黑色字体支持
+- 3.0.0 加入android 6.0 状态栏黑色字体支持
 
 # ----------
 
