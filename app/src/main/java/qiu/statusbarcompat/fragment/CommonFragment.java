@@ -38,7 +38,7 @@ public class CommonFragment extends Fragment {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                StatusBarCompat.setStatusBarColor(getActivity(), MainActivity.DEFAULT_COLOR, progress);
+                StatusBarCompat.setStatusBarColor(getActivity(), MainActivity.DEFAULT_COLOR, progress,false);
             }
 
             @Override
@@ -62,7 +62,7 @@ public class CommonFragment extends Fragment {
     }
 
     private void setStatusBar() {
-        StatusBarCompat.setStatusBarColor(getActivity(), Color.GREEN);
-        StatusBarCompat.setStatusBarColor(getActivity(), MainActivity.DEFAULT_COLOR);
+        StatusBarCompat.setStatusBarColor(getActivity(), Color.GREEN,false);
+        StatusBarCompat.setStatusBarColor(getActivity(), MainActivity.DEFAULT_COLOR,false);
     }
 }

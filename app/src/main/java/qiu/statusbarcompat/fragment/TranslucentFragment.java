@@ -46,7 +46,7 @@ public class TranslucentFragment extends Fragment {
         toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StatusBarCompat.translucentStatusBar(getActivity(), isHide);
+                StatusBarCompat.translucentStatusBar(getActivity(), isHide,false);
                 isHide = !isHide;
             }
         });
@@ -58,7 +58,7 @@ public class TranslucentFragment extends Fragment {
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
         if (!hidden) {
-            StatusBarCompat.translucentStatusBar(getActivity(), isHide);
+            StatusBarCompat.translucentStatusBar(getActivity(), isHide,false);
             isHide = !isHide;
         }
     }

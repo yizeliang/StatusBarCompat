@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "qiu.statusbarcompat"
-        minSdkVersion 14
+        minSdkVersion 19
         targetSdkVersion config.targetSdkVersion
         versionCode 1
         versionName "1.0"

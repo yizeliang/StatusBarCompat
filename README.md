@@ -1,4 +1,12 @@
 # StatusBarCompat
+
+
+# Alter
+
+- 2.0 加入android 6.0 状态栏黑色字体支持
+
+# ----------
+
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-StatusBarCompat-green.svg?style=true)](https://android-arsenal.com/details/1/3349)
 
 **Only work for SDK >= 19.**
