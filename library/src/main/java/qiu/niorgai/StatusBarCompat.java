@@ -2,12 +2,14 @@ package qiu.niorgai;
 
 import android.app.Activity;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 /**
  * Utils for status bar
@@ -63,7 +65,7 @@ public class StatusBarCompat {
     }
 
     public static void setStatusBarColorForCollapsingToolbar(@NonNull Activity activity, AppBarLayout appBarLayout, CollapsingToolbarLayout collapsingToolbarLayout,
-                                                             Toolbar toolbar, @ColorInt int statusColor,boolean useLightStatus) {
+                                                             Toolbar toolbar, @ColorInt int statusColor, boolean useLightStatus) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             StatusBarCompatLollipop.setStatusBarColorForCollapsingToolbar(activity, appBarLayout, collapsingToolbarLayout, toolbar, statusColor,getLightStatusBarMask(useLightStatus));
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

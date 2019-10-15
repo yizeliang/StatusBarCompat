@@ -1,17 +1,13 @@
 apply plugin: 'com.android.library'
 
-def config = rootProject.ext.configs;
-def lib = rootProject.ext.libs;
-
 android {
-    compileSdkVersion config.compileSdkVersion
-    buildToolsVersion config.buildToolsVersion
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion config.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 28
+        versionCode 2
+        versionName "2.0.0"
     }
     buildTypes {
         release {
@@ -22,8 +18,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile "com.android.support:appcompat-v7:${lib.supportVersion}"
-    compile "com.android.support:design:${lib.supportVersion}"
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 }
