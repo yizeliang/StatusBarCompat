@@ -1,3 +1,14 @@
+
+# 修改
+
+
+
+增加 状态栏深色模式
+
+依赖于`compileOnly 'androidx.appcompat:appcompat:1.0.0'`
+
+
+
 # StatusBarCompat
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-StatusBarCompat-green.svg?style=true)](https://android-arsenal.com/details/1/3349)
 
