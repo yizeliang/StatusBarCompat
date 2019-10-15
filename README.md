@@ -1,6 +1,7 @@
 
-# 修改
+# 修改 
 
+[![](https://jitpack.io/v/yizems/StatusBarCompat.svg)](https://jitpack.io/#yizems/StatusBarCompat)
 
 
 增加 状态栏深色模式
